@@ -77,6 +77,7 @@ def no():
      
 
 def finish():
+    w.destroy()
     num = 1
     for x in range(num):
         os.startfile('C:\Program Files (x86)\Google\Chrome\Application\chrome.exe')
