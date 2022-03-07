@@ -1,0 +1,18 @@
+Credits:
+================================================================================
+
+1.Tkinter Modules
+2.Python Integration and engine
+3.VS Code IDE
+4.*Other VS Code extentsions
+================================================================================
+
+
+
+Extensions:
+================================================================================
+1.Tabnine
+2.Python
+3.Discord Connect
+4.Jupeyter
+5.MS Edge Tools for VS Code
