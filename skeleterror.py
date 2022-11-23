@@ -3,10 +3,10 @@ import os
 from tkinter import *
 from PIL import ImageTk, Image
 import pygame
+from ui_element import *
 #========================================
 
 pygame.mixer.init()
-
 #warning windows
 w = Tk()
 w.geometry('400x185')
@@ -14,6 +14,7 @@ w.title('error!')
 w.iconbitmap('error.ico')
 w.resizable(False, False)
 w.configure(bg='black')
+ui_element(w)
 pygame.mixer.music.load("erro.mp3")
 pygame.mixer.music.play(loops=0)
 path = "error.ico"
@@ -34,6 +35,7 @@ w.title('error!')
 w.iconbitmap('error.ico')
 w.resizable(False, False)
 w.configure(bg='black')
+ui_element(w)
 path = "error.ico"
 pygame.mixer.music.load("erro.mp3")
 pygame.mixer.music.play(loops=0)
@@ -54,6 +56,7 @@ w.title('error!')
 w.iconbitmap('error.ico')
 w.resizable(False, False)
 w.configure(bg='black')
+ui_element(w)
 path = "error.ico"
 pygame.mixer.music.load("erro.mp3")
 pygame.mixer.music.play(loops=0)
@@ -76,6 +79,7 @@ w.title('last warning!')
 w.iconbitmap('error.ico')
 w.resizable(False, False)
 w.configure(bg='black')
+ui_element(w)
 w.geometry('400x185')
 pygame.mixer.music.load("erro.mp3")
 pygame.mixer.music.play(loops=0)
@@ -100,6 +104,7 @@ def no():
      w.iconbitmap('error.ico')
      w.resizable(False, False)
      w.configure(bg='black')
+     ui_element(w)
      pygame.mixer.music.load("erro.mp3")
      pygame.mixer.music.play(loops=0)
 
@@ -136,6 +141,7 @@ def yes():
     w.iconbitmap('error.ico')
     w.resizable(False, False)
     w.configure(bg='black')
+    ui_element(w)
     pygame.mixer.music.load("erro.mp3")
     pygame.mixer.music.play(loops=0)
 
@@ -171,7 +177,7 @@ btn = Button(w, text= 'Yes', command=yes, font=("Terminal", 11))
 btn.place(x=185, y=60)
 
 btn2 = Button(w, text= 'No', command=no, font=("Terminal", 11))
-btn2.place(x=187, y=100)
+btn2.place(x=188, y=100)
 
 #=====================================================================================
 
