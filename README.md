@@ -7,15 +7,15 @@
 ⚠️ **Use with Caution**: This virus code is purely intended for testing, educational, or informational purposes. It is not intended to harm or damage any computer system. However, unintended consequences may occur, and the author cannot be held responsible for any negative impact resulting from the use of this code.
 
 ## 📚 Table of Contents:
-- [Installation](#installation)
-- [Virus Description](#virus-description)
-- [Instructions](#instructions)
-- [Important](#important)
-- [Further Information](#further-information)
-- [Copyright Information](#copyright-information)
-- [Acknowledgments](#acknowledgments)
-- [License](#license)
-- [Disclaimer](#disclaimer)
+- [Installation](#-installation)
+- [Virus Description](#-virus-description)
+- [Instructions](#-instructions)
+- [Important](#-important)
+- [Further Information](#-further-information)
+- [Copyright Information](#-copyright-information)
+- [Acknowledgments](#-acknowledgments)
+- [License](#-license)
+- [Disclaimer](#-disclaimer)
 
 🔒 **Virus Description**: 
 The Python virus code in this repository utilizes the tkinter module to create a user interface that triggers computer lag when executed. The virus does not cause any permanent damage to the computer system. Restarting the computer should resolve the issue caused by this code.
@@ -24,7 +24,7 @@ The Python virus code in this repository utilizes the tkinter module to create a
 1. Clone or download this repository to your local machine.
    - You can clone the repository using the following command:
      ```
-     git clone <repository-url>
+     git clone <https://github.com/git-Abdul/skeleterrorVStable2.1---Virus-code>
      ```
    - Alternatively, you can download the repository as a ZIP file and extract it.
 
