@@ -1,4 +1,4 @@
-##📝 Readme - Python Virus Code
+## 📜 README PYTHON VIRUS CODE:
 
 🔒 Disclaimer: This code is for educational purposes only. It is important to use this code responsibly and ethically. The author does not encourage or endorse the use of this code for any malicious intent. Please read this readme carefully before proceeding.
 
